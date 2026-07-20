@@ -1,0 +1,26 @@
+{
+  "name": "backend-filesystem-turnos",
+  "version": "1.0.0",
+  "description": "API de turnos y reservas con persistencia en archivos JSON (fs.promises)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "demo:products": "node scripts/demo-product-manager.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "filesystem",
+    "json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
