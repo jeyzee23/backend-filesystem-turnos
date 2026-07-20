@@ -1,7 +1,7 @@
 {
   "name": "backend-filesystem-turnos",
   "version": "1.0.0",
-  "description": "API de turnos y reservas con persistencia en archivos JSON (fs.promises)",
+  "description": "ProductManager con persistencia en archivos JSON (fs.promises)",
   "type": "module",
   "main": "src/server.js",
   "scripts": {

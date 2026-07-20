@@ -1,6 +1,6 @@
-# Backend FileSystem — Turnos y Reservas
+# ProductManager — Persistencia con FileSystem
 
-API Node.js + Express con persistencia en archivos JSON usando `fs.promises`.
+API Node.js + Express con un `ProductManager` que persiste productos en un archivo JSON usando `fs.promises`.
 
 ## Requisitos
 
@@ -21,14 +21,11 @@ Servidor: `http://localhost:8080`
 ```text
 src/
   data/
-    services.json
-    bookings.json
     products.json
   managers/
-    ServiceManager.js
-    BookingManager.js
     ProductManager.js
   routes/
+    products.routes.js
   app.js
   server.js
 ```
@@ -38,15 +35,14 @@ src/
 | Método | Ruta | Descripción |
 |--------|------|-------------|
 | GET | `/health` | Health check |
-| GET/POST/PUT/DELETE | `/api/services` | CRUD de servicios |
-| GET/POST/PUT/DELETE | `/api/bookings` | CRUD de reservas |
-| GET/POST | `/api/products` | CRUD básico de productos |
+| GET | `/api/products` | Listar productos |
+| POST | `/api/products` | Crear producto |
 
 ## Postman
 
-Importar: `postman/Turnos-FileSystem.postman_collection.json`
+Importar: `postman/Products-FileSystem.postman_collection.json`
 
-## Demo ProductManager
+## Demo
 
 ```bash
 npm run demo:products
